@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.glass {
+  @apply rounded-2xl border border-white/20 bg-white/60 shadow-xl backdrop-blur-xl
+         dark:border-white/10 dark:bg-slate-900/60;
+}
